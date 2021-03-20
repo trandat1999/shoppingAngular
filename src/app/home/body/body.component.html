@@ -1,0 +1,25 @@
+<div >
+
+    <div class="row m-3 d-flex" >
+
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let item of items">
+        <div class="card h-100">
+          <a [routerLink]="['/item',item.name]"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a [routerLink]="['/item',item.name]">{{item.name}}</a>
+            </h4>
+            <h5>{{item.price| currency:"VND"}}</h5>
+            <p class="card-text">{{item.description}}</p>
+          </div>
+          <div class="card-footer d-flex">
+            <a name="" id="" class="m-1 btn btn-primary" [routerLink]="['/item',item.name]" role="button">View Item</a>
+            <a name="" id="" class="m-1 btn btn-primary" href="#" role="button">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
