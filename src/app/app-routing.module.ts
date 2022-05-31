@@ -5,18 +5,7 @@ import { ItemComponent } from "./home/item/item.component";
 import { CartComponent } from "./home/cart/cart.component";
 
 const routes: Routes = [
-  {
-    path: "home",
-    component: BodyComponent
-  },
-  {
-    path: "item/*",
-    component: ItemComponent
-  },
-  {
-    path: "cart",
-    component: CartComponent
-  }
+  
 ];
 
 @NgModule({
